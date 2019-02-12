@@ -1,1 +1,1 @@
-# signup-demo
+# Sign up/authentication demo
