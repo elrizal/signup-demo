@@ -19,6 +19,7 @@
   "keywords": [],
   "dependencies": {
     "express": "^4.16.4",
+    "mysql2": "^1.6.5",
     "node": "^11.9.0"
   }
 }
