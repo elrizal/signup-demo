@@ -50,43 +50,47 @@
     <link rel="stylesheet" type="text/css" href="../css/admin.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/modify.css">
 
 </head>
 
 <body>
 
     <!-- START NAV -->
-    <nav class="navbar is-white">
-        <div class="container">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item brand-text" href="../">
-          Bulma Admin
-        </a>
-                <div class="navbar-burger burger" data-target="navMenu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+              <a class="navbar-item" href="https://bulma.io">
+                <img src="./img/bup.png">
+              </a>
+          
+              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
             </div>
-            <div id="navMenu" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item" href="admin.html">
-            Home
-          </a>
-                    <a class="navbar-item" href="admin.html">
-            Orders
-          </a>
-                    <a class="navbar-item" href="admin.html">
-            Payments
-          </a>
-                    <a class="navbar-item" href="admin.html">
-            Exceptions
-          </a>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item">
+                  Home
+                </a>
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a href="/signup"class="button is-primary">
+                      <strong>Sign up</strong>
+                    </a>
+                    <a href="/" class="button is-light">
+                      Logout
+                    </a>
+                  </div>
                 </div>
-
+              </div>
             </div>
-        </div>
-    </nav>
+          </nav>
     <!-- END NAV -->
     <div class="container">
         <div class="columns">
