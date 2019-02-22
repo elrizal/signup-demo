@@ -4,74 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 <link rel="stylesheet" href="css/mystyles.css">
 <link rel="stylesheet" href="css/modify.css">
-<link rel="stylesheet" href="style.css">
 <title>Sign Up</title>
 </head>
 <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
-            <img src="./img/bup.png">
-          </a>
-      
-          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item">
-              Home
-            </a>
-          </div>
-      
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a href="/signup"class="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a href="/login" class="button is-light">
-                  Log in
-                </a>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="card" style="width: 50%; margin: 0 auto;">
+                <div class="card-content">
+                    <div class="media-content">
+                        <p class="title is-4">Sign Up</p>
+                    </div><br>
+                    <form class="signup">
+                        <div class="content">
+                          <div class="form-group">
+                              <div class="field">
+                                  <div class="control">
+                                    <input class="input is-primary form-control" type="text" placeholder="Email">
+                                  </div>
+                                </div>
+                                <div class="field">
+                                  <div class="control">
+                                    <input class="input is-info form-control" type="text" placeholder="Password">
+                                  </div>
+                        <br>  <button type="submit" class="button is-primary">Sign up</button>
+                      </form>
+                      <br />
+                      <p>Or login <a href="/login">here</a></p>
+                </div>
+        
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <h2>Sign Up Form</h2>
-      <form class="signup">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="email-input" placeholder="Email">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="password-input" placeholder="Password">
-        </div>
-        <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-          <span class="sr-only">Error:</span>
-          <span class="msg"></span>
-        </div>
-        <button type="submit" class="btn btn-success btn-block">Sign Up</button>
-      </form>
-      <br />
-      <p>Or log in
-        <a href="/login">here</a>
-      </p>
-    </div>
-  </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
