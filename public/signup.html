@@ -10,11 +10,21 @@
 <title>Sign Up</title>
 </head>
 <body>
-
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+            <img src="./img/bup.png">
+          </a>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <div class="container">
         <div class="row">
-            <div class="card" style="width: 50%; margin: 0 auto;">
+            <div class="card" >
                 <div class="card-content">
                     <div class="media-content">
                         <p class="title is-4">Sign Up</p>
@@ -22,25 +32,109 @@
                     <form class="signup">
                         <div class="content">
                           <div class="form-group">
-                              <div class="field">
+                            <div class="columns">
+                              <div class="column field">
                                   <div class="control">
                                     <input class="input is-primary form-control" type="text" placeholder="Email">
                                   </div>
                                 </div>
-                                <div class="field">
+                                <div class="column field">
                                   <div class="control">
                                     <input class="input is-info form-control" type="text" placeholder="Password">
                                   </div>
-                        <br>  <button type="submit" class="button is-primary">Sign up</button>
-                      </form>
+                                  </div>
+                                  </div>
+
+                                  <div class="columns">
+                                  <div class="dropdown column is-half">
+                                      <div class="dropdown-trigger button-col">
+                                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                                          <span>Graduation Year</span>
+                                          <span class="icon is-small">
+                                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                          </span>
+                                        </button>
+                                      </div>
+                                      <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                                        <div class="dropdown-content">
+                                          <a href="#" class="dropdown-item">
+                                            Overview
+                                          </a>
+                                          <a href="#" class="dropdown-item">
+                                            Modifiers
+                                          </a>
+                                          <a href="#" class="dropdown-item">
+                                            Grid
+                                          </a>
+                                          <a href="#" class="dropdown-item">
+                                            Form
+                                          </a>
+                                          <a href="#" class="dropdown-item">
+                                            Elements
+                                          </a>
+                                          <a href="#" class="dropdown-item">
+                                            Components
+                                          </a>
+                                          <a href="#" class="dropdown-item">
+                                            Layout
+                                          </a>
+                                          <hr class="dropdown-divider">
+                                          <a href="#" class="dropdown-item">
+                                            More
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="dropdown column is-half">
+                                        <div class="dropdown-trigger">
+                                          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                                            <span>Major</span>
+                                            <span class="icon is-small">
+                                              <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                          </button>
+                                        </div>
+                                        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                                          <div class="dropdown-content">
+                                            <a href="#" class="dropdown-item">
+                                              Overview
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                              Modifiers
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                              Grid
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                              Form
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                              Elements
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                              Components
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                              Layout
+                                            </a>
+                                            <hr class="dropdown-divider">
+                                            <a href="#" class="dropdown-item">
+                                              More
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                  </div>
+
+                                </form> 
+                                <hr><button type="submit" class="button is-primary">Sign up</button>
                       <br />
                       <p>Or login <a href="/login">here</a></p>
                 </div>
-        
                 </div>
               </div>
-</div>
-
+          </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
