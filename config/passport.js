@@ -22,7 +22,6 @@ passport.use(new LocalStrategy(
           message: "Incorrect password."
         });
       }
-      // If none of the above, return the user
       return done(null, dbUser);
     });
   }
