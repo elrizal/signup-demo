@@ -3,5 +3,6 @@ $(document).ready(function() {
         console.log(data);
         $(".member-name").text(data.email);
         $("#member-photo").attr("src", data.photo);
+        $("#degreeinfo").attr("src", data.degreeinfo);
     })
 })
