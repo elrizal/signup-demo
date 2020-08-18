@@ -9,7 +9,6 @@ router.post("/login", passport.authenticate("local"), function (req, res) {
 });
 
 router.post("/signup", function (req, res) {
-
   db
     .User
     .create({email: req.body.email, password: req.body.password})
@@ -33,7 +32,6 @@ router.post("/signup", function (req, res) {
         .status(422)
         .json(err);
     });
-
 });
 
 router.get("/user_data", function (req, res) {
